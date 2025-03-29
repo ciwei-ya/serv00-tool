@@ -7,7 +7,7 @@
 ### nohup模式
 - 一键安装 **新手小白用这个！**
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/cmliu/socks5-for-serv00/main/install-socks5.sh)
+bash <(curl -s https://raw.githubusercontent.com/ciwei-ya/serv00-tool/refs/heads/main/CM/install-socks5.sh)
 ```
 ----
 
@@ -30,7 +30,7 @@ bash <(curl -s https://raw.githubusercontent.com/cmliu/socks5-for-serv00/main/in
 * 本地SSH专用
 
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/sing-box-yg/main/serv00.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/ciwei-ya/serv00-tool/refs/heads/main/YG/serv00.sh)
 ```
 ----
 
