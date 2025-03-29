@@ -45,7 +45,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/sing-box-yg/main/ser
 ```
 添加 Secrets.`http` 变量
 ```json
-\`http://保活或重启网页1 http://保活或重启网页2 http://保活或重启网页3\`
+```http://保活或重启网页1 http://保活或重启网页2 http://保活或重启网页3```
 ```
 
 # 致谢
