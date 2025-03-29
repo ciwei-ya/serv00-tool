@@ -12,7 +12,7 @@ bash <(curl -s https://raw.githubusercontent.com/cmliu/socks5-for-serv00/main/in
 ----
 
 ## 甬哥脚本
-### 二、Serv00一键三协议共存脚本：
+### Serv00一键三协议共存脚本：
 #### 视频教程：
 
 [Serv00免费代理脚本最终教程（一）：独家支持三个IP自定义安装，支持Proxyip+反代IP、支持Argo临时/固定隧道+CDN回源；支持五个节点的Sing-box与Clash订阅配置输出](https://youtu.be/2VF9D6z2z7w)
@@ -45,7 +45,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/sing-box-yg/main/ser
 ```
 添加 Secrets.`http` 变量
 ```json
-http://保活或重启网页1 http://保活或重启网页2 http://保活或重启网页3
+'http://保活或重启网页1 http://保活或重启网页2 http://保活或重启网页3'
 ```
 
 # 致谢
