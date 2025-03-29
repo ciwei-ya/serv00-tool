@@ -11,7 +11,7 @@ bash <(curl -s https://raw.githubusercontent.com/cmliu/socks5-for-serv00/main/in
 ```
 ----
 
-##甬哥脚本
+## 甬哥脚本
 ### 二、Serv00一键三协议共存脚本：
 #### 视频教程：
 
