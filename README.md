@@ -44,7 +44,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/ciwei-ya/serv00-tool/refs/head
 ]
 ```
 添加 Secrets.`http` 变量
-``
+```
 http://保活或重启网页1 http://保活或重启网页2 http://保活或重启网页3
 ```
 
