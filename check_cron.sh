@@ -11,7 +11,7 @@ CRON_ALIST="cd ${ALIST_PATH} && screen -dmS alist ./alist server" #Alist启动�
 FANS_PATH="/home/${USER}/domains/fansMedalHelper" #B站粉丝牌助手文件夹
 CRON_FANS="cd ${FANS_PATH} && rm /home/${USER}/domains/fansMedalHelper/log.txt && nohup python main.py > /home/${USER}/domains/fansMedalHelper/log.txt 2>&1 &" #B站粉丝牌助手指令
 HYSTERIA_CONFIG="/home/${USER}/.hysteria/config.yaml"  # Hysteria 配置文件路径
-CRON_HYSTERIA="nohup /home/${USER}/.hysteria/web -c $HYSTERIA_CONFIG >/dev/null 2>&1 &"  # Hysteria 启动命令
+CRON_HYSTERIA="nohup /home/${USER}/.hysteria/web server -c $HYSTERIA_CONFIG >/dev/null 2>&1 &"  # Hysteria 启动命令
 
 echo "检查并添加 crontab 任务"
 
@@ -49,7 +49,7 @@ fi
 
 if [ -e "$HYSTERIA_CONFIG" ]; then
     echo "添加Hysteria 的 crontab 重启任务"
-   (crontab -l | grep -F "@reboot pkill -u ${USER} -x \"web\" && ${RON_HYSTERIA}") || (crontab -l; echo "@reboot pkill -u ${USER} -x \"web\" && ${RON_HYSTERIA}") | crontab -
+   (crontab -l | grep -F "@reboot pkill -u ${USER} -x \"web\" && ${CRON_HYSTERIA}") || (crontab -l; echo "@reboot pkill -u ${USER} -x \"web\" && ${CRON_HYSTERIA}") | crontab -
     (crontab -l | grep -F "*/12 * * * * pgrep -x \"web\" > /dev/null || ${CRON_HYSTERIA}") || (crontab -l; echo "*/12 * * * * pgrep -x \"web\" > /dev/null || ${CRON_HYSTERIA}") | crontab -
   else
     echo "未安装Hysteria"
