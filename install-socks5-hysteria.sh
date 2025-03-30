@@ -391,9 +391,11 @@ if [[ "$install_nezha_answer" == "Y" ]]; then
   install_nezha_agent
 fi
 
-read -p "是否添加 crontab 任务来守护进程？(Y/N 回车N)" add_crontab_answer
-add_crontab_answer=${add_crontab_answer^^}
+echo "请使用Github Actions进行保活"
 
-if [[ "$add_crontab_answer" == "Y" ]]; then
+#read -p "是否添加 crontab 任务来守护进程？(Y/N 回车N)" add_crontab_answer
+#add_crontab_answer=${add_crontab_answer^^}
+
+#if [[ "$add_crontab_answer" == "Y" ]]; then
   add_crontab_task
 fi
